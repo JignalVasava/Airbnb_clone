@@ -1,0 +1,240 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: var(--z-modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.modal {
+  background-color: #ffffff;
+  border-radius: var(--radius-xl);
+  width: 100%;
+  max-width: 1040px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-modal);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--color-border-subtle);
+  position: relative;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+}
+
+.closeBtn:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.titleScore {
+  font-size: var(--font-size-xl);
+}
+
+.dot {
+  color: var(--color-text-secondary);
+}
+
+.titleCount {
+  font-size: var(--font-size-xl);
+}
+
+.body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .body {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+}
+
+.sidebarCol {
+  padding: 24px;
+  border-right: 1px solid var(--color-border-subtle);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-pill);
+  padding: 10px 16px;
+}
+
+.searchInput {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: var(--font-size-sm);
+  outline: none;
+  font-family: inherit;
+}
+
+.scoresList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.scoreRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+
+.catBarWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.catBarTrack {
+  width: 100px;
+  height: 4px;
+  background-color: var(--color-border-light);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.catBarFill {
+  height: 100%;
+  background-color: var(--color-text-primary);
+  border-radius: var(--radius-pill);
+}
+
+.catScoreVal {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  width: 24px;
+  text-align: right;
+}
+
+.reviewsCol {
+  padding: 24px 32px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.noResults {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.modalReviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.authorHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.authorAvatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorAvatarPlaceholder {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-brand);
+}
+
+.authorName {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.stayDuration {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.ratingDateRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.reviewDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.reviewContent {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-loose);
+}

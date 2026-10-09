@@ -1,0 +1,170 @@
+.header {
+  position: relative;
+  width: 100%;
+  height: var(--header-height);
+  background-color: var(--color-bg-primary);
+  border-bottom: 1px solid var(--color-border-card);
+  z-index: var(--z-header);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-gutter-desktop);
+}
+
+@media (min-width: 1440px) {
+  .inner {
+    padding-left: var(--page-gutter-wide);
+    padding-right: var(--page-gutter-wide);
+  }
+}
+
+/* Brand Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-brand);
+  cursor: pointer;
+  user-select: none;
+}
+
+.brandText {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--color-brand);
+  display: inline-block;
+}
+
+/* Search Bar Pill */
+.searchBar {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  padding: 0 8px 0 24px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-search);
+  background-color: var(--color-bg-primary);
+  transition: box-shadow var(--transition-fast);
+  cursor: pointer;
+}
+
+.searchHouseIcon {
+  margin-right: 12px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar:hover {
+  box-shadow: var(--shadow-search-hover);
+}
+
+.searchSegment {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.searchSegmentMuted {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.searchDivider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--color-border-light);
+  margin: 0 16px;
+}
+
+.searchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: 12px;
+  border-radius: 50%;
+  background-color: var(--color-brand);
+  color: var(--color-text-white);
+  flex-shrink: 0;
+}
+
+/* User Controls / Right Section */
+.userActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hostLink {
+  padding: 10px 14px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  border-radius: var(--radius-pill);
+  transition: background-color var(--transition-fast);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.hostLink:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--color-text-primary);
+  transition: background-color var(--transition-fast);
+  cursor: pointer;
+}
+
+.iconBtn:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.userMenuBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 44px;
+  padding: 0 8px 0 14px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: box-shadow var(--transition-fast);
+  cursor: pointer;
+}
+
+.userMenuBtn:hover {
+  box-shadow: var(--shadow-search-hover);
+}
+
+.userAvatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-text-secondary);
+  color: var(--color-text-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

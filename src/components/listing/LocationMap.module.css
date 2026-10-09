@@ -1,0 +1,154 @@
+.locationSection {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.locationSubtitle {
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  margin-bottom: 24px;
+}
+
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: #f1f3f4;
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-sm);
+}
+
+.mapSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.mapControlsTopLeft {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.controlBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border-card);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.controlBtn:hover {
+  background-color: var(--color-bg-hover);
+  transform: scale(1.04);
+}
+
+.mapControlsTopRight {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-card);
+  overflow: hidden;
+}
+
+.zoomBtn {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-primary);
+  font-size: 20px;
+  font-weight: 400;
+  transition: background-color var(--transition-fast);
+}
+
+.zoomBtn:hover {
+  background-color: var(--color-bg-hover);
+}
+
+.zoomDivider {
+  height: 1px;
+  background-color: var(--color-border-subtle);
+}
+
+.markerContainer {
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.markerContainer:hover {
+  transform: scale(1.1);
+}
+
+.exactLocationNotice {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.neighbourhoodArea {
+  margin-top: 24px;
+}
+
+.neighbourhoodTitle {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.neighbourhoodText {
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+  line-height: var(--line-height-loose);
+  max-width: 800px;
+  margin-bottom: 12px;
+}
+
+.showMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  padding: 0;
+}
+
+.sectionDivider {
+  height: 1px;
+  background-color: var(--color-border-subtle);
+  margin-top: 48px;
+}

@@ -1,0 +1,347 @@
+.reviewsSection {
+  width: 100%;
+  padding-top: 16px;
+}
+
+/* Rating Hero */
+.ratingHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.laurelHeroGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.laurel3d {
+  height: 96px;
+  width: auto;
+  object-fit: contain;
+  user-select: none;
+}
+
+.bigScore {
+  font-size: 88px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: var(--color-text-primary);
+}
+
+.guestFavouriteTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin: 0 0 6px 0;
+}
+
+.guestFavouriteDesc {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  max-width: 380px;
+  margin: 0 0 12px 0;
+  line-height: 1.35;
+}
+
+.howReviewsWorkBtn {
+  background: transparent;
+  border: none;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Breakdown Matrix */
+.breakdownMatrix {
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--color-border-card);
+}
+
+.overallBarCol {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.matrixColTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 12px 0;
+}
+
+.barsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.barRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.barLabel {
+  width: 10px;
+}
+
+.barTrack {
+  flex: 1;
+  height: 4px;
+  background-color: var(--color-border-light);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background-color: var(--color-text-primary);
+}
+
+.categoryScoresRow {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  border-left: 1px solid var(--color-border-card);
+  padding-left: 32px;
+}
+
+.categoryScoreCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.catName {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.catScore {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.catIcon {
+  color: var(--color-text-primary);
+  margin-top: 8px;
+}
+
+/* Chips Row */
+.chipsRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-pill);
+  background-color: var(--color-bg-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.chip:hover {
+  border-color: var(--color-border-dark);
+}
+
+.chipSelected {
+  background-color: var(--color-bg-secondary);
+  border-color: var(--color-border-dark);
+  font-weight: 600;
+}
+
+.chipEmoji {
+  font-size: 14px;
+}
+
+.chipLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+
+.chipCount {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+/* Reviews 2-Column Grid */
+.reviewsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 40px;
+  column-gap: 80px;
+  margin-bottom: 36px;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.authorHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.authorAvatarImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorAvatarPlaceholder {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #EBDAC4;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.amitPlaceholder {
+  background-color: #F4E2D3;
+  color: #6E4924;
+}
+
+.vedantPlaceholder {
+  background-color: #EAE6F8;
+  color: #5E4FA2;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.authorName {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.stayDuration {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin: 2px 0 0 0;
+}
+
+.ratingDateRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.dot {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-xs);
+}
+
+.reviewDate {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.reviewContent {
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.showMoreReviewBtn {
+  background: transparent;
+  border: none;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  align-self: flex-start;
+}
+
+.showAllReviewsBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 23px;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-primary);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.showAllReviewsBtn:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.sectionDivider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border-card);
+  margin: 40px 0;
+}
+
+@media (max-width: 900px) {
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .breakdownMatrix {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .categoryScoresRow {
+    grid-template-columns: repeat(3, 1fr);
+    border-left: none;
+    padding-left: 0;
+  }
+}

@@ -1,0 +1,79 @@
+.amenitiesSection {
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0 0 24px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 24px;
+  margin-bottom: 32px;
+}
+
+.amenityItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.amenityName {
+  font-size: var(--font-size-md);
+  color: var(--color-text-primary);
+}
+
+.unavailable {
+  text-decoration: line-through;
+  color: var(--color-text-secondary);
+}
+
+.showAllBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 23px;
+  border: 1px solid var(--color-border-dark);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-bg-primary);
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.showAllBtn:hover {
+  background-color: var(--color-bg-secondary);
+}
+
+.showAllBtn:active {
+  transform: scale(0.98);
+}
+
+.sectionDivider {
+  height: 1px;
+  width: 100%;
+  background-color: var(--color-border-card);
+  margin: 32px 0;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

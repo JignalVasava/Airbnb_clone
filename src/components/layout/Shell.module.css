@@ -1,0 +1,25 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-primary);
+}
+
+.main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  padding: 24px var(--page-gutter-desktop) 64px;
+}
+
+@media (min-width: 1440px) {
+  .main {
+    padding-left: var(--page-gutter-wide);
+    padding-right: var(--page-gutter-wide);
+  }
+}
+
+.contentWrapper {
+  width: 100%;
+}
